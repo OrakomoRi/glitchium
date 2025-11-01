@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="glitchium - Professional JavaScript library for high-performance glitch effects. Lightweight, zero dependencies, GPU-accelerated.">
+	<meta name="keywords" content="glitch effect, javascript library, web animations, visual effects, performance, gpu acceleration">
+	<meta name="author" content="glitchium">
+	<meta name="theme-color" content="#0ea5e9">
+	
+	<!-- Open Graph / Social Media -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="glitchium">
+	<meta property="og:description" content="Lightweight JavaScript library for high-performance glitch effects">
+	<meta property="og:image" content="assets/images/glitchium.svg">
+	
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="glitchium">
+	<meta name="twitter:description" content="Lightweight JavaScript library for high-performance glitch effects">
+
+	<title>glitchium</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/svg+xml" href="assets/images/glitchium.svg">
+	
+	<!-- Ionicons -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	
+	<!-- Highlight.js for code syntax highlighting -->
+	<link rel="stylesheet" id="highlight-theme-dark" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" id="highlight-theme-light" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css" disabled>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+	
+	<link rel="stylesheet" href="assets/css/styles.css">
+	
+	<!-- Theme initialization (must be before body render) -->
+	<script>!function(){const t=localStorage.getItem('glitchium-theme')||'dark';document.documentElement.setAttribute('data-theme',t)}();</script>
+
+	<script src="dist/glitchium.min.js" defer></script>
+	<script type="module" src="assets/js/main.js" defer></script>
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+				<a href="/" class="nav__logo">
+					<img src="assets/images/glitchium.svg" alt="glitchium logo" class="nav__logo-icon" id="logoIcon">
+					<span class="nav__logo-text"><strong>glitchium</strong></span>
+				</a>
+				<ul class="nav__menu">
+					<li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="/playground" class="nav__link">Playground</a></li>
+					<li class="nav__item"><a href="/usage" class="nav__link">Usage</a></li>
+					<li class="nav__item"><a href="/docs" class="nav__link">Docs</a></li>
+				</ul>
+				<div class="nav__actions">
+					<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+						<ion-icon name="sunny-outline" class="theme-toggle__icon theme-toggle__icon--sun"></ion-icon>
+						<ion-icon name="moon-outline" class="theme-toggle__icon theme-toggle__icon--moon"></ion-icon>
+					</button>
+					<a href="dist/glitchium.min.js" download class="btn btn--primary btn--small">
+						<ion-icon name="download-outline"></ion-icon>
+						Download
+					</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Main Content Container (Dynamic) -->
+	<main id="app"></main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__brand">
+					<div class="footer__logo">
+						<img src="assets/images/glitchium.svg" alt="glitchium" class="footer__logo-icon">
+						<strong>glitchium</strong>
+					</div>
+					<p class="footer__tagline">Professional glitch effects library</p>
+				</div>
+				<div class="footer__links">
+					<div class="footer__column">
+						<h4 class="footer__heading">Materials</h4>
+						<ul class="footer__list">
+							<li><a href="/usage" class="footer__link">Usage</a></li>
+							<li><a href="/docs" class="footer__link">Docs</a></li>
+							<li><a href="https://github.com/OrakomoRi/glitchium" target="_blank" rel="noopener noreferrer" class="footer__link">Github</a></li>
+							<li><a href="https://github.com/OrakomoRi/glitchium/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer" class="footer__link">Changelog</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__heading">Donate</h4>
+						<ul class="footer__list">
+							<li><a href="https://boosty.to/orakomori/donate" target="_blank" rel="noopener noreferrer" class="footer__link">Boosty</a></li>
+							<li><a href="https://www.patreon.com/orakomori" target="_blank" rel="noopener noreferrer" class="footer__link">Patreon</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__heading">Other</h4>
+						<ul class="footer__list">
+							<li><a href="https://github.com/7PH/powerglitch" target="_blank" rel="noopener noreferrer" class="footer__link">PowerGlitch</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<p class="footer__copyright">&copy; 2025 glitchium. Open source library.</p>
+				<p class="footer__powered">Powered by <a href="https://github.com/OrakomoRi" target="_blank" rel="noopener noreferrer" class="footer__powered-link">OrakomoRi</a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

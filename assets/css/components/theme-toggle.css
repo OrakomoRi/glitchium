@@ -1,0 +1,65 @@
+/**
+ * Theme Toggle Component
+ */
+
+.theme-toggle {
+	width: 40px;
+	height: 40px;
+	background-color: var(--color-bg-tertiary);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	cursor: pointer;
+	transition: all var(--transition-base);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.theme-toggle:hover {
+	background-color: var(--color-bg-elevated);
+	border-color: var(--color-primary);
+}
+
+.theme-toggle__icon {
+	font-size: 20px;
+	color: var(--color-text-secondary);
+	transition: all var(--transition-base);
+	position: absolute;
+}
+
+.theme-toggle__icon--sun {
+	opacity: 0;
+	transform: scale(0) rotate(90deg);
+}
+
+.theme-toggle__icon--moon {
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+}
+
+[data-theme="light"] .theme-toggle__icon--sun {
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+}
+
+[data-theme="light"] .theme-toggle__icon--moon {
+	opacity: 0;
+	transform: scale(0) rotate(-90deg);
+}
+
+.theme-toggle:hover .theme-toggle__icon {
+	color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+	.theme-toggle {
+		width: 36px;
+		height: 36px;
+	}
+
+	.theme-toggle__icon {
+		font-size: 18px;
+	}
+}

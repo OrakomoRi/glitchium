@@ -1,0 +1,123 @@
+/**
+ * Hero Section
+ */
+
+.hero {
+	padding: var(--space-4xl) 0;
+	background-color: var(--color-bg-primary);
+	border-bottom: 1px solid var(--color-border);
+	position: relative;
+}
+
+.hero__content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.hero__title {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-sm);
+	margin-bottom: var(--space-xl);
+}
+
+.hero__title-line {
+	font-size: var(--font-size-6xl);
+	line-height: 1.1;
+	font-weight: var(--font-weight-bold);
+}
+
+.hero__title-line--glitch {
+	color: var(--color-primary);
+}
+
+.hero__description {
+	font-size: var(--font-size-xl);
+	color: var(--color-text-secondary);
+	line-height: var(--line-height-relaxed);
+	margin-bottom: var(--space-2xl);
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero__actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-lg);
+	margin-bottom: var(--space-4xl);
+}
+
+.hero__stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--space-2xl);
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.stat {
+	text-align: center;
+}
+
+.stat ion-icon {
+	font-size: var(--font-size-2xl);
+	color: var(--color-primary);
+	margin-bottom: var(--space-sm);
+}
+
+.stat__value {
+	font-size: var(--font-size-2xl);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-text-primary);
+	margin-bottom: var(--space-xs);
+}
+
+.stat__label {
+	font-size: var(--font-size-sm);
+	color: var(--color-text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+	.hero {
+		padding: var(--space-2xl) 0;
+	}
+
+	.hero__title-line {
+		font-size: var(--font-size-3xl);
+	}
+
+	.hero__description {
+		font-size: var(--font-size-base);
+		padding: 0 var(--space-md);
+	}
+
+	.hero__actions {
+		flex-direction: column;
+		width: 100%;
+		padding: 0 var(--space-md);
+	}
+
+	.hero__actions .btn {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.hero__stats {
+		grid-template-columns: 1fr;
+		gap: var(--space-lg);
+		padding: 0 var(--space-md);
+	}
+}
+
+@media (max-width: 480px) {
+	.hero__title-line {
+		font-size: var(--font-size-2xl);
+	}
+}

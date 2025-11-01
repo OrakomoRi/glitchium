@@ -1,0 +1,40 @@
+/**
+ * Main Styles - Imports all CSS modules
+ */
+
+/* Base */
+@import 'base/reset.css';
+@import 'base/variables.css';
+@import 'base/typography.css';
+@import 'base/scrollbar.css';
+
+/* Components */
+@import 'components/theme-toggle.css';
+@import 'components/container.css';
+@import 'components/button.css';
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/introduction.css';
+@import 'components/demo.css';
+@import 'components/playground-fullscreen.css';
+@import 'components/code-block.css';
+@import 'components/api.css';
+@import 'components/download.css';
+@import 'components/footer.css';
+@import 'components/error-page.css';
+
+/* App Container Transitions */
+#app {
+	opacity: 1;
+	transition: opacity 0.2s ease;
+}
+
+/* Playground page - remove body scroll */
+body:has(.playground-fullscreen) {
+	overflow: hidden;
+}
+
+#app:has(.playground-fullscreen) {
+	height: calc(100vh - var(--header-height, 80px));
+	overflow: hidden;
+}

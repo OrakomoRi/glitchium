@@ -1,0 +1,95 @@
+/**
+ * Code Block Component
+ */
+
+.usage {
+	background-color: var(--color-bg-secondary);
+}
+
+.usage__content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-xl);
+	max-width: 800px;
+	margin: var(--space-3xl) auto 0;
+}
+
+.code-block {
+	background-color: var(--color-bg-tertiary);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	overflow: hidden;
+}
+
+.code-block__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--space-md) var(--space-lg);
+	background-color: var(--color-bg-elevated);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.code-block__title {
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-text-secondary);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.code-block__copy {
+	padding: var(--space-xs) var(--space-md);
+	font-size: var(--font-size-xs);
+	color: var(--color-text-secondary);
+	background-color: transparent;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-sm);
+	transition: all var(--transition-fast);
+}
+
+.code-block__copy:hover {
+	color: var(--color-primary);
+	border-color: var(--color-primary);
+}
+
+.code-block__copy:active {
+	transform: scale(0.95);
+}
+
+.code-block__content {
+	padding: var(--space-md);
+	overflow-x: auto;
+	background: #282c34;
+}
+
+.code-block__content code {
+	display: block;
+	padding: var(--space-lg);
+	color: var(--color-text-primary);
+	font-size: var(--font-size-sm);
+	line-height: var(--line-height-relaxed);
+	white-space: pre;
+	background: transparent;
+}
+
+/* Highlight.js theme override for better integration */
+.code-block__content .hljs {
+	background: transparent;
+	padding: 0;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .code-block__content {
+	background: #282c34;
+}
+
+/* Light theme adjustments */
+[data-theme="light"] .code-block__content {
+	background: #fafafa;
+	border: 1px solid var(--color-border);
+}
+
+[data-theme="light"] .code-block__content code {
+	color: #383a42;
+}

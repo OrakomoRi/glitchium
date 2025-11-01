@@ -1,0 +1,64 @@
+/**
+ * 404 Error Page Styles
+ */
+
+.error-page {
+	min-height: calc(100vh - var(--header-height, 80px) - 300px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem 0;
+}
+
+.error-page__content {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.error-page__code {
+	font-size: clamp(6rem, 15vw, 12rem);
+	font-weight: 900;
+	line-height: 1;
+	margin: 0 0 1rem;
+	color: var(--color-primary);
+	letter-spacing: -0.02em;
+}
+
+.error-page__title {
+	font-size: clamp(2rem, 5vw, 3rem);
+	font-weight: 700;
+	margin: 0 0 1rem;
+	color: var(--color-text-primary);
+}
+
+.error-page__description {
+	font-size: 1.125rem;
+	color: var(--color-text-secondary);
+	margin: 0 0 2.5rem;
+	line-height: 1.6;
+}
+
+.error-page__actions {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+	.error-page {
+		padding: 2rem 0;
+		min-height: calc(100vh - var(--header-height, 80px) - 200px);
+	}
+	
+	.error-page__actions {
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.error-page__actions .btn {
+		width: 100%;
+	}
+}
