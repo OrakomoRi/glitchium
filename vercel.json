@@ -24,5 +24,7 @@
 				}
 			]
 		}
-	]
+	],
+	"buildCommand": "node build.js",
+	"outputDirectory": "."
 }
