@@ -150,18 +150,22 @@ class Glitchium {
 			if (config.smoothTransitions && interpolationState) {
 				// Smooth interpolated mode
 				this._updateWithInterpolation(layers, interpolationState, timestamp, config, animationProgress);
-			} else {
-				// Original instant mode
-				layers.forEach(layer => {
-					if (layer.isBase && config.shake) {
+		} else {
+			// Original instant mode
+			layers.forEach(layer => {
+				if (layer.isBase) {
+					if (config.shake) {
 						this._updateShake(layer.element, config, animationProgress);
 					} else {
-						this._updateSlice(layer.element, config, animationProgress);
+						// Keep base layer visible when shake is disabled
+						layer.element.style.opacity = '1';
+						layer.element.style.transform = 'none';
 					}
-				});
-			}
-
-			rafId = requestAnimationFrame(updateGlitch);
+				} else {
+					this._updateSlice(layer.element, config, animationProgress);
+				}
+			});
+		}			rafId = requestAnimationFrame(updateGlitch);
 		};
 
 		const start = () => {
@@ -334,8 +338,14 @@ class Glitchium {
 		// Update layers
 		let sliceIndex = 0;
 		layers.forEach(layer => {
-			if (layer.isBase && config.shake) {
-				this._updateShakeInterpolated(layer.element, state.shake, easedProgress, config, animationProgress);
+			if (layer.isBase) {
+				if (config.shake) {
+					this._updateShakeInterpolated(layer.element, state.shake, easedProgress, config, animationProgress);
+				} else {
+					// Keep base layer visible when shake is disabled
+					layer.element.style.opacity = '1';
+					layer.element.style.transform = 'none';
+				}
 			} else {
 				this._updateSliceInterpolated(layer.element, state.slices[sliceIndex], easedProgress, config, animationProgress);
 				sliceIndex++;

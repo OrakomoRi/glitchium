@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Size](https://img.shields.io/badge/size-<5KB-green.svg)](dist/glitchium.min.js)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.0.1-orange.svg)](CHANGELOG.md)
 
 Professional, high-performance glitch effect library with zero dependencies. Create stunning visual distortions with full customization control.
 
@@ -35,7 +35,7 @@ Download the latest `glitchium.min.js` from the [dist folder](dist/) and include
 #### CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/glitchium@1.0.0/dist/glitchium.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glitchium@1.0.1/dist/glitchium.min.js"></script>
 ```
 
 ### Basic Usage
