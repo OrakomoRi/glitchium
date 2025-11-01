@@ -93,3 +93,16 @@
 [data-theme="light"] .code-block__content code {
 	color: #383a42;
 }
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+	.code-block__content {
+		padding: var(--space-sm);
+	}
+
+	.code-block__content code {
+		padding: var(--space-md);
+		font-size: var(--font-size-xs);
+		line-height: var(--line-height-normal);
+	}
+}

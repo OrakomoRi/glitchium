@@ -83,6 +83,10 @@
 	background-color: var(--color-bg-secondary);
 	padding: 2px 6px;
 	border-radius: var(--radius-sm);
+	display: inline-block;
+	max-width: 100%;
+	overflow-x: auto;
+	vertical-align: bottom;
 }
 
 .api-params p {
@@ -95,6 +99,10 @@
 	background-color: var(--color-bg-secondary);
 	padding: 2px 6px;
 	border-radius: var(--radius-sm);
+	display: inline-block;
+	max-width: 100%;
+	overflow-x: auto;
+	vertical-align: bottom;
 }
 
 /* API Table */
@@ -127,11 +135,113 @@
 	padding: 2px 6px;
 	border-radius: var(--radius-sm);
 	font-size: var(--font-size-sm);
+	display: inline-block;
+	max-width: 100%;
+	overflow-x: auto;
+	vertical-align: bottom;
 }
 
 @media (max-width: 768px) {
 	.api-table {
 		display: block;
 		overflow-x: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.api-section {
+		padding: var(--space-md);
+	}
+
+	.api-section__title {
+		font-size: var(--font-size-xl);
+	}
+
+	.api__content {
+		gap: var(--space-2xl);
+		padding: 0 var(--space-xs);
+	}
+
+	.api-method {
+		margin-bottom: var(--space-lg);
+		padding-bottom: var(--space-lg);
+	}
+
+	.api-method__signature {
+		font-size: var(--font-size-xs);
+		padding: var(--space-xs) var(--space-sm);
+		max-width: 100%;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+
+	.api-method__description {
+		font-size: var(--font-size-sm);
+	}
+
+	.api-params__list {
+		margin-left: var(--space-md);
+		padding-right: var(--space-xs);
+		font-size: var(--font-size-sm);
+	}
+
+	.api-params__list li {
+		margin-bottom: var(--space-sm);
+	}
+
+	.api-table {
+		font-size: var(--font-size-xs);
+	}
+
+	.api-table th,
+	.api-table td {
+		padding: var(--space-xs) var(--space-sm);
+		min-width: 80px;
+	}
+
+	.api-table th:first-child,
+	.api-table td:first-child {
+		min-width: 100px;
+		position: sticky;
+		left: 0;
+		background-color: var(--color-bg-secondary);
+		z-index: 1;
+	}
+
+	[data-theme="light"] .api-table th:first-child,
+	[data-theme="light"] .api-table td:first-child {
+		background-color: var(--color-bg-tertiary);
+	}
+
+	.api-table code {
+		font-size: var(--font-size-xs);
+		padding: 1px 4px;
+	}
+
+	/* Улучшение скроллбаров для inline кода на мобильных */
+	.api-params__list code,
+	.api-params p code,
+	.api-table code {
+		scrollbar-width: thin;
+		scrollbar-color: var(--color-primary) transparent;
+	}
+
+	.api-params__list code::-webkit-scrollbar,
+	.api-params p code::-webkit-scrollbar,
+	.api-table code::-webkit-scrollbar {
+		height: 4px;
+	}
+
+	.api-params__list code::-webkit-scrollbar-track,
+	.api-params p code::-webkit-scrollbar-track,
+	.api-table code::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	.api-params__list code::-webkit-scrollbar-thumb,
+	.api-params p code::-webkit-scrollbar-thumb,
+	.api-table code::-webkit-scrollbar-thumb {
+		background-color: var(--color-primary);
+		border-radius: 2px;
 	}
 }
