@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Define routes
 	const routes = {
 		'/': {
-			title: 'glitchium - Professional Glitch Effects',
+			title: 'glitchium',
 			template: homeTemplate,
 			showFooter: true,
 			init: () => {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		},
 		'/playground': {
-			title: 'Playground - glitchium',
+			title: 'glitchium - playground',
 			template: playgroundTemplate,
 			showFooter: false,
 			init: () => {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		},
 		'/usage': {
-			title: 'Usage - glitchium',
+			title: 'glitchium - usage',
 			template: usageTemplate,
 			showFooter: true,
 			init: () => {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		},
 		'/docs': {
-			title: 'Documentation - glitchium',
+			title: 'glitchium - documentation',
 			template: docsTemplate,
 			showFooter: true,
 			init: () => {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		},
 		'/404': {
-			title: '404 - Page Not Found - glitchium',
+			title: 'glitchium - 404 Not Found',
 			template: notFoundTemplate,
 			showFooter: true,
 			init: () => {
