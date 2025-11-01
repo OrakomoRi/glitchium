@@ -1,0 +1,21 @@
+{
+  "name": "glitchium",
+  "version": "1.0.1",
+  "description": "Lightweight JavaScript library for fully randomized glitch effects",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrakomoRi/glitchium.git"
+  },
+  "keywords": [],
+  "author": "OrakomoRi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OrakomoRi/glitchium/issues"
+  },
+  "homepage": "https://github.com/OrakomoRi/glitchium#readme"
+}
