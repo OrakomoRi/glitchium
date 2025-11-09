@@ -12,13 +12,13 @@ Professional, high-performance glitch effect library with zero dependencies. Cre
 
 ## :sparkles: Features
 
-- :feather: **Lightweight** - Under 3KB minified, no dependencies
-- :zap: **High Performance** - GPU-accelerated, 60fps smooth animations
-- :art: **Fully Randomized** - Unique glitch patterns every time
-- :gear: **Highly Configurable** - Control every aspect of the effect
-- :paintbrush: **Smooth Transitions** - Optional interpolation for cinematic effects
-- :mouse: **Flexible Triggers** - Hover, click, always-on, or manual control
-- :package: **Universal** - Works in all modern browsers, vanilla JS
+- **Lightweight** - Under 3KB minified, no dependencies
+- **High Performance** - GPU-accelerated, 60fps smooth animations
+- **Fully Randomized** - Unique glitch patterns every time
+- **Highly Configurable** - Control every aspect of the effect
+- **Smooth Transitions** - Optional interpolation for cinematic effects
+- **Flexible Triggers** - Hover, click, always-on, or manual control
+- **Universal** - Works in all modern browsers, vanilla JS
 
 ## :rocket: Quick Start
 
