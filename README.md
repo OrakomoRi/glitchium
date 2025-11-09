@@ -3,7 +3,7 @@
 > Lightweight JavaScript library for fully randomized glitch effects
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Size](https://img.shields.io/badge/size-<5KB-green.svg)](dist/glitchium.min.js)
+[![Size](https://img.shields.io/badge/size-~8KB-green.svg)](dist/glitchium.min.js)
 [![Version](https://img.shields.io/badge/version-1.0.1-orange.svg)](CHANGELOG.md)
 
 Professional, high-performance glitch effect library with zero dependencies. Create stunning visual distortions with full customization control.
