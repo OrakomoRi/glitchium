@@ -10,6 +10,8 @@ Professional, high-performance glitch effect library with zero dependencies. Cre
 
 **:star: Inspired by [powerglitch](https://github.com/7PH/powerglitch) - check it out!**
 
+Check out the [showcase website](https://glitchium.vercel.app) for live demos and documentation.
+
 ## :sparkles: Features
 
 - **Lightweight** - Under 3KB minified, no dependencies
